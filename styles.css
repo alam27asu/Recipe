@@ -1,0 +1,32 @@
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url ('https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400 ');
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root {
+    --Black: ##0D0D0D;
+    --Light-Gray: ##F2F2F2;
+    --Teal: #7ABFBF;
+    --Transparent-Teal: rgba(122, 191, 191, .5);
+    --Orange: #EB5428;
+}
+/*---------------------Main-------------------------------------------------*/
+@media screen and (max-width: 600px) {
+    body {
+        background-color: var(--Teal);
+    }
+    header ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        list-style-type: none;
+    }
+    h2 {
+        font-weight: bold;
+    }
+    .rating p::first-line {
+        font-weight: bold;
+    }
+    .ingredients {
+        background-filter: blur(5px);
+        background-color: var(--Transparent-Teal);
+    }
+}
